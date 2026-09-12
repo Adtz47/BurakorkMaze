@@ -9,7 +9,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!;
 // this is the publishable key for your Clerk frontend API, which is safe to expose to the public. It is used to initialize the ClerkProvider and enable authentication features in your app.
-
+//the onwer of the Clerk account can find this key in the Clerk dashboard under API keys. It is important to keep this key secure and not share it with unauthorized parties, as it can be used to access sensitive user data and perform actions on behalf of users.
 if (!publishableKey) {
   throw new Error("Missing EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY. Add it to your .env file.");
 }
